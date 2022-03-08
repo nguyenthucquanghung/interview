@@ -1,26 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  LinearProgress,
+  Typography,
+  Modal,
+  Box,
+  Snackbar,
+  Alert
+} from "@mui/material";
+import { Route, Router } from 'react-router-dom';
+import history from './history';
+import Footer from './pages/footer';
+import Header from './pages/header';
+import Home from './pages/home';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Box className={`container`}>
+    <Header/>
+    <Router history={history}>
+      <Route exact path='/' component={Home} />
+    </Router>
+    <Footer/>
+  </Box>
 }
 
 export default App;

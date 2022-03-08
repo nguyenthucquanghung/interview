@@ -1,0 +1,28 @@
+.header-container {
+  padding: 44px 35px;
+  .header-right {
+    flex-grow: 1;
+  }
+  .header-left {
+    .btn-login {
+      background-color: #61cfe2;
+      //styleName: Heading 2/Medium_KOR;
+      font-family: SF Pro;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 510;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: white;
+    }
+    .btn-text {
+      color: white;
+    }
+
+    .btn-outlined{
+      color:#61cfe2;
+      border: 1px solid #61cfe2 ;
+    }
+  }
+}

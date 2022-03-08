@@ -1,0 +1,23 @@
+.footer-container {
+  background-color: #404c79;
+
+  height: max-content;
+  padding: 40px 10vw;
+
+  .footer-right {
+    flex-grow: 1;
+    .p-company-name {
+      color: #6A77A5;
+      font-family: Work Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      text-align: left;
+    }
+  }
+
+  .footer-left {
+  }
+}
